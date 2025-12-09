@@ -1,0 +1,74 @@
+This branch contains a full reproduction of DeePoint inference using the original authors’ pretrained weights, adapted to run without a GPU on an AMD-based laptop.
+
+The original DeePoint code assumes an NVIDIA CUDA environment (GPU). This reproduction implements the necessary modifications to enable successful inference, logging, and analysis entirely on CPU hardware, without altering the model architecture or its learned weights.
+
+DeePoint performs:
+Framewise pointing action recognition (“is the person pointing?”)
+3D pointing direction estimation from short videos
+
+It works by:
+Running a pose detector (OpenPifPaf) to extract body joints
+Passing a 15-frame temporal window of joints into a transformer-based model
+
+Predicting:
+a probability of pointing
+a 3-component 3D direction vector
+
+Key Changes I Made
+File	                                        Change	                                                                      Reason
+src/demo.py	                                Added torch.load(..., map_location=torch.device("cpu"))                       Prevents CUDA checkpoint errors on CPU-only machines
+src/demo.py	                                Modified model dict loading to strip Lightning prefix model.                  Required to correctly load pretrained weights on inference-only build
+analyze_results.py (added)	                Custom tool for extracting and analyzing prob_pointing from terminal logs     Allows quantitative evaluation without downloading the full training dataset
+.gitignore	                                Added models/ and *.ckpt to excluded files	                              Prevents copyrighted 100+ MB weights from being committed to GitHub
+numpy pin (numpy<2)	                        Downgraded locally	                                                      Prevents compiled dependencies (OpenPifPaf) from crashing under NumPy 2.x
+torch & torchvision pinned to CPU variants	Avoided incompatible CUDA versions	                                      Ensured successful runtime on AMD laptop with no NVIDIA GPU
+
+The goal was not to modify the DeePoint model itself, but to reproduce its inference behavior faithfully under hardware constraints.
+All modifications are strictly compatibility and reproducibility changes, without altering any learned parameters or prediction logic.
+
+Component	Specification
+CPU	AMD Ryzen 7 8840HS
+GPU	None (iGPU only, no CUDA support)
+RAM	16 GB
+OS	Windows 11
+Python	Anaconda 3 / Python 3.10
+PyTorch	CPU-only 1.13.1
+NumPy	1.26.x
+Pose Model	OpenPifPaf 0.13.x
+
+Output Analysis (Without Dataset Download)
+Since full quantitative metrics require the large private DeePoint dataset, I implemented a reproducible log-based inference analysis using the model’s own prob_pointing output.
+Using analyze_results.py, the following can now be done without retraining:
+extract per-clip pointing probabilities
+compute summary statistics
+visualize:
+time-series probability curve
+histogram distribution of model confidence
+
+These visual and numerical results support qualitative comparison to the ICCV publication.
+This enables meaningful evaluation without dataset access or compute-heavy retraining.
+
+No changes to:
+model architecture
+transformer layers
+loss functions
+attention structure
+temporal window length
+learned weights
+
+No fine-tuning, training, or modification of dataset logic was performed in this branch.
+This branch is a pure inference reproduction.
+
+Model Weights
+The authors’ pretrained weights are not included in this repo due to file size limitations and copyright restrictions.
+Download them from the original project:
+https://github.com/kyotovision-public/deepoint
+Place the file into:
+models/weight.ckpt
+
+Citation
+Nakamura et al. “DeePoint: Visual Pointing Recognition and Direction Estimation.” ICCV 2023.
+Original Repository: https://github.com/kyotovision-public/deepoint
+
+Acknowledgments
+KyotoVision Group — Original DeePoint Research
