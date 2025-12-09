@@ -48,7 +48,8 @@ def main(cfg: DictConfig) -> None:
     network = build_pointing_network(cfg, DEVICE)
 
     # Since the model trained using pytorch lightning contains `model.` as an prefix to the keys of state_dict, we should remove them before loading
-    model_dict = torch.load(cfg.ckpt)["state_dict"]
+    checkpoint = torch.load(cfg.ckpt, map_location=torch.device("cpu"))
+    model_dict = checkpoint["state_dict"]
     new_model_dict = dict()
     for k, v in model_dict.items():
         new_model_dict[k[6:]] = model_dict[k]
