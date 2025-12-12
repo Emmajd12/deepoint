@@ -5,7 +5,7 @@ from pathlib import Path
 import matplotlib.pyplot as plt
 
 
-LOG_PATH = Path("deepoint_log.txt")  # change this if your log file has a different name
+LOG_PATH = Path("deepoint_log2.txt")  # change this if your log file has a different name
 
 
 def extract_probabilities(log_path: Path):
