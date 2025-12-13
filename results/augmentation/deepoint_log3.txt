@@ -1,0 +1,1843 @@
+(deepoint) C:\Users\emmal\OneDrive\Desktop\CV_FP\deepoint>python src/demo.py ^
+More?   movie=./demo/example.mp4 ^
+More?   lr=l ^
+More?   ckpt="lightning_logs\split_time\lightning_logs\version_4\checkpoints\augment_weights.ckpt"
+[2025-12-12 02:47:22,613][root][INFO] - Successfully loaded settings:
+==================================================
+data:
+  dataset_name: DPDataset
+  data_root: data/frames/
+  label_root: data/labels/
+  keypoints_root: data/keypoints/
+  venue_names:
+  - 2023-01-17-livingroom
+model:
+  tlength: 15
+  featvec_joint: true
+  hidden_size: 192
+  attention_heads: 12
+  num_layers: 6
+  featvec_bb: false
+  featvec_img: false
+  omit_temporal_encoder: false
+hardware:
+  nworkers: 8
+  gpus: 8
+  bs: 32
+task: train
+incl_all: false
+train_ratio: 0.7
+split_method: time
+overfit: false
+ckpt: lightning_logs\split_time\lightning_logs\version_4\checkpoints\augment_weights.ckpt
+noanswer: false
+movie: ./demo/example.mp4
+lr: l
+verbose: false
+shrink_rate: 0.1
+filter_joint: null
+use_preprocessed: false
+debug: false
+hist_error: false
+augment: false
+tag: base
+==================================================
+
+[2025-12-12 02:47:22,613][root][WARNING] - Running DeePoint with CPU takes a long time.
+self.fps=59.94, self.num_frames=601, self.width=2704, self.height=2028
+[2025-12-12 02:47:23,218][openpifpaf.decoder.factory][INFO] - No specific decoder requested. Using the first one from:
+  --decoder=cifcaf:0
+  --decoder=posesimilarity:0
+Use any of the above arguments to select one or multiple decoders and to suppress this message.
+[2025-12-12 02:47:23,218][openpifpaf.predictor][INFO] - neural network device: cpu (CUDA available: False, count: 0)
+  0%|                                                            | 0/293 [00:00<?, ?it/s]src\openpifpaf\csrc\src\cif_hr.cpp:102: UserInfo: resizing cifhr buffer
+src\openpifpaf\csrc\src\occupancy.cpp:53: UserInfo: resizing occupancy buffer
+[2025-12-12 02:47:26,198][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [12]
+[2025-12-12 02:47:26,199][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 02:47:28,547][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [12]
+[2025-12-12 02:47:28,549][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 02:47:31,007][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [12]
+[2025-12-12 02:47:31,009][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 02:47:33,405][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [10]
+[2025-12-12 02:47:33,407][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 02:47:35,751][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [11]
+[2025-12-12 02:47:35,753][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 02:47:38,171][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [11]
+[2025-12-12 02:47:38,173][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 02:47:40,544][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [10]
+[2025-12-12 02:47:40,546][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 02:47:42,924][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [10]
+[2025-12-12 02:47:42,925][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 02:47:45,321][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [11]
+[2025-12-12 02:47:45,324][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 02:47:47,681][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [11]
+[2025-12-12 02:47:47,682][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 02:47:50,063][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [11]
+[2025-12-12 02:47:50,065][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 02:47:52,469][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [11]
+[2025-12-12 02:47:52,471][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 02:47:54,837][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [11]
+[2025-12-12 02:47:54,838][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 02:47:57,285][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [11]
+[2025-12-12 02:47:57,287][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 02:47:59,661][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [11]
+[2025-12-12 02:47:59,663][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 02:48:05,740][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [10]
+[2025-12-12 02:48:05,742][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6049969792366028
+prob_pointing=0.558769702911377
+  0%|▏                                                | 1/293 [01:46<8:39:58, 106.84s/it][2025-12-12 02:49:14,576][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [11]
+[2025-12-12 02:49:14,577][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 02:49:21,103][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [11]
+[2025-12-12 02:49:21,105][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.599769115447998
+prob_pointing=0.6058661937713623
+  1%|▎                                                 | 2/293 [03:02<7:09:34, 88.57s/it][2025-12-12 02:50:30,478][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [11]
+[2025-12-12 02:50:30,480][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 02:50:36,907][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [11]
+[2025-12-12 02:50:36,909][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6171659827232361
+prob_pointing=0.5675673484802246
+  1%|▌                                                 | 3/293 [04:18<6:40:09, 82.79s/it][2025-12-12 02:51:46,373][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [11]
+[2025-12-12 02:51:46,375][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 02:51:52,511][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [10]
+[2025-12-12 02:51:52,512][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5917359590530396
+prob_pointing=0.6193328499794006
+  1%|▋                                                 | 4/293 [05:34<6:25:38, 80.06s/it][2025-12-12 02:53:02,349][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [10]
+[2025-12-12 02:53:02,351][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 02:53:08,342][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [10]
+[2025-12-12 02:53:08,343][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5775097608566284
+prob_pointing=0.6185228228569031
+  2%|▊                                                 | 5/293 [06:50<6:17:09, 78.57s/it][2025-12-12 02:54:18,437][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [10]
+[2025-12-12 02:54:18,437][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 02:54:24,675][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [10]
+[2025-12-12 02:54:24,679][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5669654011726379
+prob_pointing=0.5640584230422974
+  2%|█                                                 | 6/293 [08:06<6:11:46, 77.72s/it][2025-12-12 02:55:34,498][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [10]
+[2025-12-12 02:55:34,501][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 02:55:40,675][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [10]
+[2025-12-12 02:55:40,676][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6120349764823914
+prob_pointing=0.5704253911972046
+  2%|█▏                                                | 7/293 [09:21<6:06:59, 76.99s/it][2025-12-12 02:56:50,001][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [10]
+[2025-12-12 02:56:50,003][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 02:56:56,247][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [10]
+[2025-12-12 02:56:56,248][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5372301340103149
+prob_pointing=0.610220193862915
+  3%|█▎                                                | 8/293 [10:37<6:03:22, 76.50s/it][2025-12-12 02:58:05,498][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [10]
+[2025-12-12 02:58:05,499][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 02:58:11,903][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [10]
+[2025-12-12 02:58:11,905][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5723315477371216
+prob_pointing=0.5812668800354004
+  3%|█▌                                                | 9/293 [11:53<6:01:49, 76.44s/it][2025-12-12 02:59:21,900][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [9]
+[2025-12-12 02:59:21,901][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 02:59:28,260][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [10]
+[2025-12-12 02:59:28,261][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6016058325767517
+prob_pointing=0.5641024708747864
+  3%|█▋                                               | 10/293 [13:09<5:59:24, 76.20s/it][2025-12-12 03:00:37,764][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [10]
+[2025-12-12 03:00:37,766][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 03:00:44,183][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [10]
+[2025-12-12 03:00:44,185][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5596668720245361
+prob_pointing=0.6106953024864197
+  4%|█▊                                               | 11/293 [14:25<5:57:28, 76.06s/it][2025-12-12 03:01:53,553][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [10]
+[2025-12-12 03:01:53,556][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 03:01:59,948][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [10]
+[2025-12-12 03:01:59,955][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6434264779090881
+prob_pointing=0.5706725120544434
+  4%|██                                               | 12/293 [15:40<5:55:33, 75.92s/it][2025-12-12 03:03:09,209][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [10]
+[2025-12-12 03:03:09,211][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 03:03:15,815][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [10]
+[2025-12-12 03:03:15,815][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5513009428977966
+prob_pointing=0.5840513110160828
+  4%|██▏                                              | 13/293 [16:56<5:53:49, 75.82s/it][2025-12-12 03:04:24,832][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [9]
+[2025-12-12 03:04:24,836][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 03:04:31,386][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [10]
+[2025-12-12 03:04:31,396][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.562136709690094
+prob_pointing=0.6111859679222107
+  5%|██▎                                              | 14/293 [18:12<5:52:49, 75.88s/it][2025-12-12 03:05:40,866][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [10]
+[2025-12-12 03:05:40,866][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 03:05:47,917][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [10]
+[2025-12-12 03:05:47,917][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5713061094284058
+prob_pointing=0.5653215646743774
+  5%|██▌                                              | 15/293 [19:29<5:53:59, 76.40s/it][2025-12-12 03:06:58,571][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [11]
+[2025-12-12 03:06:58,573][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 03:07:05,442][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [11]
+[2025-12-12 03:07:05,445][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5614961385726929
+prob_pointing=0.6100670695304871
+  5%|██▋                                              | 16/293 [20:47<5:54:01, 76.69s/it][2025-12-12 03:08:15,929][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [10]
+[2025-12-12 03:08:15,932][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 03:08:22,917][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [10]
+[2025-12-12 03:08:22,919][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5528432130813599
+prob_pointing=0.499660849571228
+  6%|██▊                                              | 17/293 [22:04<5:53:02, 76.75s/it][2025-12-12 03:09:32,857][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [10]
+[2025-12-12 03:09:32,858][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 03:09:39,862][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [8]
+[2025-12-12 03:09:39,864][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.604834258556366
+prob_pointing=0.5761650800704956
+  6%|███                                              | 18/293 [23:20<5:51:04, 76.60s/it][2025-12-12 03:10:49,204][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [8]
+[2025-12-12 03:10:49,206][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 03:10:56,278][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [10]
+[2025-12-12 03:10:56,280][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5575242042541504
+prob_pointing=0.5771693587303162
+  6%|███▏                                             | 19/293 [24:36<5:49:32, 76.54s/it][2025-12-12 03:12:05,600][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [10]
+[2025-12-12 03:12:05,601][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 03:12:12,676][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [8]
+[2025-12-12 03:12:12,678][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6153872013092041
+prob_pointing=0.6220309734344482
+  7%|███▎                                             | 20/293 [25:53<5:47:56, 76.47s/it][2025-12-12 03:13:22,030][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [8]
+[2025-12-12 03:13:22,031][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 03:13:29,277][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [11]
+[2025-12-12 03:13:29,279][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5955780148506165
+prob_pointing=0.6263079643249512
+  7%|███▌                                             | 21/293 [27:10<5:47:18, 76.61s/it][2025-12-12 03:14:39,060][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [12]
+[2025-12-12 03:14:39,061][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 03:14:46,343][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [12]
+[2025-12-12 03:14:46,346][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.571722149848938
+prob_pointing=0.606514573097229
+  8%|███▋                                             | 22/293 [28:28<5:48:55, 77.25s/it][2025-12-12 03:15:57,909][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [12]
+[2025-12-12 03:15:57,911][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 03:16:05,178][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [12]
+[2025-12-12 03:16:05,178][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5867815017700195
+prob_pointing=0.6022409796714783
+  8%|███▊                                             | 23/293 [29:46<5:48:18, 77.40s/it][2025-12-12 03:17:15,672][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [12]
+[2025-12-12 03:17:15,674][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 03:17:22,817][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [12]
+[2025-12-12 03:17:22,818][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5141964554786682
+prob_pointing=0.5452213287353516
+  8%|████                                             | 24/293 [31:03<5:46:44, 77.34s/it][2025-12-12 03:18:32,963][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 03:18:32,964][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 03:18:40,318][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [12]
+[2025-12-12 03:18:40,320][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5839441418647766
+prob_pointing=0.6036472916603088
+  9%|████▏                                            | 25/293 [32:21<5:45:54, 77.44s/it][2025-12-12 03:19:50,655][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 03:19:50,657][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 03:19:58,065][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [12]
+[2025-12-12 03:19:58,066][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.594618558883667
+prob_pointing=0.5857332944869995
+  9%|████▎                                            | 26/293 [33:39<5:45:20, 77.61s/it][2025-12-12 03:21:08,714][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [12]
+[2025-12-12 03:21:08,715][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 03:21:16,286][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [12]
+[2025-12-12 03:21:16,288][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.594478964805603
+prob_pointing=0.6468232274055481
+  9%|████▌                                            | 27/293 [34:58<5:45:44, 77.99s/it][2025-12-12 03:22:27,803][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [12]
+[2025-12-12 03:22:27,807][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 03:22:35,391][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [12]
+[2025-12-12 03:22:35,392][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5515401363372803
+prob_pointing=0.5593572854995728
+ 10%|████▋                                            | 28/293 [36:16<5:44:57, 78.11s/it][2025-12-12 03:23:46,182][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 03:23:46,186][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 03:23:53,898][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 03:23:53,900][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6119375228881836
+prob_pointing=0.5884116291999817
+ 10%|████▊                                            | 29/293 [37:35<5:44:02, 78.19s/it][2025-12-12 03:25:04,636][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 03:25:04,636][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 03:25:12,402][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 03:25:12,405][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5865435600280762
+prob_pointing=0.5449047088623047
+ 10%|█████                                            | 30/293 [38:53<5:42:35, 78.16s/it][2025-12-12 03:26:22,842][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 03:26:22,844][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 03:26:30,536][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 03:26:30,538][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5681438446044922
+prob_pointing=0.5778975486755371
+ 11%|█████▏                                           | 31/293 [40:11<5:41:25, 78.19s/it][2025-12-12 03:27:41,120][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [12]
+[2025-12-12 03:27:41,122][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 03:27:49,002][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [12]
+[2025-12-12 03:27:49,003][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5623620748519897
+prob_pointing=0.550259530544281
+ 11%|█████▎                                           | 32/293 [41:29<5:40:24, 78.26s/it][2025-12-12 03:28:59,592][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [12]
+[2025-12-12 03:28:59,593][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 03:29:07,352][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [9]
+[2025-12-12 03:29:07,353][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5956526398658752
+prob_pointing=0.6278159022331238
+ 11%|█████▌                                           | 33/293 [42:47<5:38:41, 78.16s/it][2025-12-12 03:30:17,541][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [12]
+[2025-12-12 03:30:17,544][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 03:30:25,417][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [10]
+[2025-12-12 03:30:25,417][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6244720816612244
+prob_pointing=0.5988502502441406
+ 12%|█████▋                                           | 34/293 [44:06<5:38:28, 78.41s/it][2025-12-12 03:31:36,669][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [9]
+[2025-12-12 03:31:36,672][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 03:31:44,784][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [10]
+[2025-12-12 03:31:44,786][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.57178795337677
+prob_pointing=0.6354742646217346
+ 12%|█████▊                                           | 35/293 [45:25<5:37:58, 78.60s/it][2025-12-12 03:32:55,771][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [9]
+[2025-12-12 03:32:55,773][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 03:33:03,880][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [11]
+[2025-12-12 03:33:03,883][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5894669890403748
+prob_pointing=0.5314949750900269
+ 12%|██████                                           | 36/293 [46:45<5:37:40, 78.84s/it][2025-12-12 03:34:15,318][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [10]
+[2025-12-12 03:34:15,323][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 03:34:23,704][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [11]
+[2025-12-12 03:34:23,706][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5503368973731995
+prob_pointing=0.5933570265769958
+ 13%|██████▏                                          | 37/293 [48:04<5:37:19, 79.06s/it][2025-12-12 03:35:34,900][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 03:35:34,902][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 03:35:43,436][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 03:35:43,438][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5852916240692139
+prob_pointing=0.4853276312351227
+ 13%|██████▎                                          | 38/293 [49:24<5:36:27, 79.17s/it][2025-12-12 03:36:54,368][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [11]
+[2025-12-12 03:36:54,369][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 03:37:02,776][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [12]
+[2025-12-12 03:37:02,778][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5328305959701538
+prob_pointing=0.582819402217865
+ 13%|██████▌                                          | 39/293 [50:43<5:35:22, 79.22s/it][2025-12-12 03:38:13,763][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [12]
+[2025-12-12 03:38:13,765][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 03:38:22,123][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [12]
+[2025-12-12 03:38:22,127][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6182692050933838
+prob_pointing=0.5238697528839111
+ 14%|██████▋                                          | 40/293 [52:03<5:34:34, 79.35s/it][2025-12-12 03:39:33,461][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [12]
+[2025-12-12 03:39:33,463][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 03:39:42,007][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [14]
+[2025-12-12 03:39:42,009][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5877429842948914
+prob_pointing=0.6025100350379944
+ 14%|██████▊                                          | 41/293 [53:22<5:33:06, 79.31s/it][2025-12-12 03:40:52,827][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 03:40:52,829][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 03:41:01,386][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [12]
+[2025-12-12 03:41:01,402][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5757941007614136
+prob_pointing=0.5895491242408752
+ 14%|███████                                          | 42/293 [54:41<5:32:08, 79.40s/it][2025-12-12 03:42:12,523][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 03:42:12,525][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 03:42:21,149][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [12]
+[2025-12-12 03:42:21,150][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6122066378593445
+prob_pointing=0.6059363484382629
+ 15%|███████▏                                         | 43/293 [56:02<5:31:43, 79.61s/it][2025-12-12 03:43:32,639][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 03:43:32,640][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 03:43:41,336][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 03:43:41,338][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5414111018180847
+prob_pointing=0.5519071221351624
+ 15%|███████▎                                         | 44/293 [57:21<5:30:33, 79.65s/it][2025-12-12 03:44:52,492][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 03:44:52,494][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 03:45:01,189][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 03:45:01,191][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5505452752113342
+prob_pointing=0.5517606735229492
+ 15%|███████▌                                         | 45/293 [58:41<5:28:50, 79.56s/it][2025-12-12 03:46:11,849][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 03:46:11,851][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 03:46:20,658][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 03:46:20,660][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.619529128074646
+prob_pointing=0.604668915271759
+ 16%|███████▍                                       | 46/293 [1:00:00<5:27:07, 79.46s/it][2025-12-12 03:47:31,183][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 03:47:31,183][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 03:47:40,071][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [12]
+[2025-12-12 03:47:40,073][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5804603695869446
+prob_pointing=0.5759226083755493
+ 16%|███████▌                                       | 47/293 [1:01:20<5:26:38, 79.67s/it][2025-12-12 03:48:51,394][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 03:48:51,396][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 03:49:00,374][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 03:49:00,376][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6181157827377319
+prob_pointing=0.5810706615447998
+ 16%|███████▋                                       | 48/293 [1:02:40<5:26:10, 79.88s/it][2025-12-12 03:50:11,919][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 03:50:11,921][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 03:50:21,190][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 03:50:21,192][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6160184144973755
+prob_pointing=0.6193261742591858
+ 17%|███████▊                                       | 49/293 [1:04:02<5:26:24, 80.26s/it][2025-12-12 03:51:33,027][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 03:51:33,031][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 03:51:42,186][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 03:51:42,187][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6492466926574707
+prob_pointing=0.6002815961837769
+ 17%|████████                                       | 50/293 [1:05:22<5:25:50, 80.46s/it][2025-12-12 03:52:53,990][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [14]
+[2025-12-12 03:52:53,992][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 03:53:03,113][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 03:53:03,115][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.619337260723114
+prob_pointing=0.5970278382301331
+ 17%|████████▏                                      | 51/293 [1:06:44<5:25:33, 80.72s/it][2025-12-12 03:54:15,584][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 03:54:15,584][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 03:54:24,877][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 03:54:24,879][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6249242424964905
+prob_pointing=0.6130551099777222
+ 18%|████████▎                                      | 52/293 [1:08:05<5:24:47, 80.86s/it][2025-12-12 03:55:36,793][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 03:55:36,793][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 03:55:45,981][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 03:55:45,983][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5918838381767273
+prob_pointing=0.585754930973053
+ 18%|████████▌                                      | 53/293 [1:09:26<5:24:10, 81.04s/it][2025-12-12 03:56:58,261][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 03:56:58,263][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 03:57:07,627][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 03:57:07,629][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5957379937171936
+prob_pointing=0.6222278475761414
+ 18%|████████▋                                      | 54/293 [1:10:48<5:23:43, 81.27s/it][2025-12-12 03:58:20,079][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 03:58:20,080][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 03:58:29,381][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 03:58:29,381][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5766369700431824
+prob_pointing=0.5643355250358582
+ 19%|████████▊                                      | 55/293 [1:12:10<5:22:48, 81.38s/it][2025-12-12 03:59:41,783][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 03:59:41,786][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 03:59:51,369][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 03:59:51,369][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5914641618728638
+prob_pointing=0.5833535194396973
+ 19%|████████▉                                      | 56/293 [1:13:31<5:21:24, 81.37s/it][2025-12-12 04:01:03,187][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:01:03,189][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 04:01:12,709][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:01:12,711][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6037601232528687
+prob_pointing=0.6011915802955627
+ 19%|█████████▏                                     | 57/293 [1:14:52<5:19:46, 81.30s/it][2025-12-12 04:02:24,430][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:02:24,432][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 04:02:33,980][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:02:33,980][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.616232693195343
+prob_pointing=0.5836762189865112
+ 20%|█████████▎                                     | 58/293 [1:16:15<5:19:42, 81.63s/it][2025-12-12 04:03:46,910][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:03:46,912][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 04:03:56,495][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:03:56,497][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6053961515426636
+prob_pointing=0.5683807730674744
+ 20%|█████████▍                                     | 59/293 [1:17:37<5:19:09, 81.84s/it][2025-12-12 04:05:09,261][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:05:09,263][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 04:05:19,042][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:05:19,044][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.541082501411438
+prob_pointing=0.6468715667724609
+ 20%|█████████▌                                     | 60/293 [1:18:59<5:18:05, 81.91s/it][2025-12-12 04:06:31,396][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:06:31,398][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 04:06:41,268][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:06:41,270][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6164253354072571
+prob_pointing=0.5421025156974792
+ 21%|█████████▊                                     | 61/293 [1:20:21<5:16:59, 81.98s/it][2025-12-12 04:07:53,675][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:07:53,677][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 04:08:03,459][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:08:03,461][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5882391929626465
+prob_pointing=0.6020479202270508
+ 21%|█████████▉                                     | 62/293 [1:21:44<5:16:02, 82.09s/it][2025-12-12 04:09:16,134][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:09:16,134][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 04:09:26,108][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:09:26,111][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6065965294837952
+prob_pointing=0.6139843463897705
+ 22%|██████████                                     | 63/293 [1:23:06<5:15:28, 82.30s/it][2025-12-12 04:10:38,865][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:10:38,869][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 04:10:48,774][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:10:48,776][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6096600890159607
+prob_pointing=0.5690699815750122
+ 22%|██████████▎                                    | 64/293 [1:24:30<5:15:01, 82.54s/it][2025-12-12 04:12:02,076][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:12:02,078][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 04:12:12,199][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:12:12,201][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6118844151496887
+prob_pointing=0.6318393349647522
+ 22%|██████████▍                                    | 65/293 [1:25:53<5:14:10, 82.68s/it][2025-12-12 04:13:25,057][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:13:25,058][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 04:13:35,152][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:13:35,155][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6094024181365967
+prob_pointing=0.5678924918174744
+ 23%|██████████▌                                    | 66/293 [1:27:15<5:12:58, 82.72s/it][2025-12-12 04:14:48,105][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:14:48,105][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 04:14:58,284][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:14:58,286][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5992526412010193
+prob_pointing=0.5866707563400269
+ 23%|██████████▋                                    | 67/293 [1:28:39<5:12:58, 83.09s/it][2025-12-12 04:16:12,048][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:16:12,050][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 04:16:22,242][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:16:22,244][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6231134533882141
+prob_pointing=0.5632445216178894
+ 23%|██████████▉                                    | 68/293 [1:30:03<5:12:38, 83.37s/it][2025-12-12 04:17:36,141][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:17:36,142][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 04:17:46,518][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:17:46,521][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.563900887966156
+prob_pointing=0.5907898545265198
+ 24%|███████████                                    | 69/293 [1:31:27<5:11:49, 83.53s/it][2025-12-12 04:19:00,203][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:19:00,205][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 04:19:10,507][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:19:10,509][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.638319194316864
+prob_pointing=0.641708493232727
+ 24%|███████████▏                                   | 70/293 [1:32:52<5:12:05, 83.97s/it][2025-12-12 04:20:25,236][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:20:25,238][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 04:20:35,727][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:20:35,729][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5646757483482361
+prob_pointing=0.6322240829467773
+ 24%|███████████▍                                   | 71/293 [1:34:18<5:12:24, 84.44s/it][2025-12-12 04:21:50,755][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:21:50,757][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 04:22:01,472][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:22:01,474][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5878753662109375
+prob_pointing=0.595400333404541
+ 25%|███████████▌                                   | 72/293 [1:35:42<5:10:51, 84.39s/it][2025-12-12 04:23:15,095][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:23:15,097][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 04:23:25,653][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:23:25,655][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5888789892196655
+prob_pointing=0.5827749371528625
+ 25%|███████████▋                                   | 73/293 [1:37:06<5:09:14, 84.34s/it][2025-12-12 04:24:39,446][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:24:39,448][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 04:24:50,159][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:24:50,161][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5591419339179993
+prob_pointing=0.6391552090644836
+ 25%|███████████▊                                   | 74/293 [1:38:31<5:08:13, 84.45s/it][2025-12-12 04:26:04,156][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:26:04,159][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 04:26:14,794][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:26:14,796][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6705532073974609
+prob_pointing=0.5104313492774963
+ 26%|████████████                                   | 75/293 [1:39:56<5:07:04, 84.51s/it][2025-12-12 04:27:28,895][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:27:28,896][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 04:27:39,694][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:27:39,696][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.555534839630127
+prob_pointing=0.593921959400177
+ 26%|████████████▏                                  | 76/293 [1:41:20<5:05:17, 84.41s/it][2025-12-12 04:28:53,116][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:28:53,118][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 04:29:03,968][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:29:03,968][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5722609758377075
+prob_pointing=0.6357278227806091
+ 26%|████████████▎                                  | 77/293 [1:42:45<5:04:43, 84.65s/it][2025-12-12 04:30:18,515][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:30:18,516][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 04:30:29,338][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:30:29,340][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5688392519950867
+prob_pointing=0.6018568873405457
+ 27%|████████████▌                                  | 78/293 [1:44:10<5:03:49, 84.79s/it][2025-12-12 04:31:43,621][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:31:43,623][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 04:31:54,537][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:31:54,537][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5433140397071838
+prob_pointing=0.6402435302734375
+ 27%|████████████▋                                  | 79/293 [1:45:35<5:02:18, 84.76s/it][2025-12-12 04:33:08,372][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:33:08,375][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 04:33:19,574][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:33:19,574][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5791614651679993
+prob_pointing=0.5901883840560913
+ 27%|████████████▊                                  | 80/293 [1:47:00<5:01:05, 84.81s/it][2025-12-12 04:34:33,427][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:34:33,429][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 04:34:44,561][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:34:44,563][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5870441198348999
+prob_pointing=0.5586187839508057
+ 28%|████████████▉                                  | 81/293 [1:48:25<5:00:19, 85.00s/it][2025-12-12 04:35:58,917][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:35:58,919][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 04:36:09,983][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:36:09,985][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.569580614566803
+prob_pointing=0.5778030157089233
+ 28%|█████████████▏                                 | 82/293 [1:49:50<4:58:49, 84.98s/it][2025-12-12 04:37:23,858][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:37:23,859][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 04:37:35,080][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:37:35,082][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5999687910079956
+prob_pointing=0.5839598178863525
+ 28%|█████████████▎                                 | 83/293 [1:51:16<4:57:55, 85.12s/it][2025-12-12 04:38:49,441][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:38:49,443][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 04:39:00,637][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:39:00,641][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5958206057548523
+prob_pointing=0.6190822720527649
+ 29%|█████████████▍                                 | 84/293 [1:52:41<4:56:58, 85.26s/it][2025-12-12 04:40:15,061][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 04:40:15,065][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 04:40:26,492][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 04:40:26,494][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6551330089569092
+prob_pointing=0.5488402843475342
+ 29%|█████████████▋                                 | 85/293 [1:54:07<4:55:46, 85.32s/it][2025-12-12 04:41:40,513][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 04:41:40,514][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 04:41:52,057][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [14]
+[2025-12-12 04:41:52,059][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6325311064720154
+prob_pointing=0.5783390998840332
+ 29%|█████████████▊                                 | 86/293 [1:55:32<4:54:36, 85.39s/it][2025-12-12 04:43:06,220][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 04:43:06,223][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 04:43:17,652][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 04:43:17,653][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5707021951675415
+prob_pointing=0.5275513529777527
+ 30%|█████████████▉                                 | 87/293 [1:56:58<4:53:18, 85.43s/it][2025-12-12 04:44:31,757][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 04:44:31,760][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 04:44:43,286][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 04:44:43,288][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5992251038551331
+prob_pointing=0.572597324848175
+ 30%|██████████████                                 | 88/293 [1:58:25<4:53:25, 85.88s/it][2025-12-12 04:45:58,737][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 04:45:58,739][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 04:46:10,601][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 04:46:10,603][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6368932723999023
+prob_pointing=0.6119397878646851
+ 30%|██████████████▎                                | 89/293 [1:59:51<4:52:47, 86.12s/it][2025-12-12 04:47:25,546][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 04:47:25,549][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 04:47:37,371][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 04:47:37,373][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6074647903442383
+prob_pointing=0.6216722726821899
+ 31%|██████████████▍                                | 90/293 [2:01:18<4:51:32, 86.17s/it][2025-12-12 04:48:51,999][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 04:48:52,000][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 04:49:03,783][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 04:49:03,785][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5587506294250488
+prob_pointing=0.575255811214447
+ 31%|██████████████▌                                | 91/293 [2:02:44<4:50:25, 86.26s/it][2025-12-12 04:50:18,407][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 04:50:18,409][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 04:50:30,401][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 04:50:30,403][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6080508828163147
+prob_pointing=0.5794777274131775
+ 31%|██████████████▊                                | 92/293 [2:04:12<4:50:10, 86.62s/it][2025-12-12 04:51:46,014][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 04:51:46,016][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 04:51:57,886][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 04:51:57,887][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.640814483165741
+prob_pointing=0.5741704106330872
+ 32%|██████████████▉                                | 93/293 [2:05:39<4:49:36, 86.88s/it][2025-12-12 04:53:13,483][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 04:53:13,487][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 04:53:25,556][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 04:53:25,557][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5649791955947876
+prob_pointing=0.527502715587616
+ 32%|███████████████                                | 94/293 [2:07:06<4:47:55, 86.81s/it][2025-12-12 04:54:40,249][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 04:54:40,251][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 04:54:52,282][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 04:54:52,284][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5648531317710876
+prob_pointing=0.5862895846366882
+ 32%|███████████████▏                               | 95/293 [2:08:33<4:46:35, 86.85s/it][2025-12-12 04:56:07,223][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 04:56:07,225][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 04:56:19,449][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 04:56:19,451][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5330369472503662
+prob_pointing=0.5627296566963196
+ 33%|███████████████▍                               | 96/293 [2:09:59<4:45:05, 86.83s/it][2025-12-12 04:57:34,054][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 04:57:34,055][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 04:57:46,224][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 04:57:46,226][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6533052921295166
+prob_pointing=0.591637134552002
+ 33%|███████████████▌                               | 97/293 [2:11:27<4:44:08, 86.98s/it][2025-12-12 04:59:01,445][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 04:59:01,447][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 04:59:13,793][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 04:59:13,793][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6151335835456848
+prob_pointing=0.6671007871627808
+ 33%|███████████████▋                               | 98/293 [2:12:54<4:42:48, 87.02s/it][2025-12-12 05:00:28,641][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 05:00:28,643][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 05:00:40,920][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 05:00:40,923][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6028445959091187
+prob_pointing=0.5690697431564331
+ 34%|███████████████▉                               | 99/293 [2:14:21<4:41:34, 87.09s/it][2025-12-12 05:01:55,979][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 05:01:55,979][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 05:02:08,484][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 05:02:08,486][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6215097308158875
+prob_pointing=0.5888227820396423
+ 34%|███████████████▋                              | 100/293 [2:15:50<4:41:23, 87.48s/it][2025-12-12 05:03:24,507][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 05:03:24,509][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 05:03:37,010][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 05:03:37,011][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5901157259941101
+prob_pointing=0.5878648161888123
+ 34%|███████████████▊                              | 101/293 [2:17:17<4:40:16, 87.58s/it][2025-12-12 05:04:52,411][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 05:04:52,413][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 05:05:05,447][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 05:05:05,450][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5490512847900391
+prob_pointing=0.5831395387649536
+ 35%|████████████████                              | 102/293 [2:18:47<4:40:50, 88.22s/it][2025-12-12 05:06:22,094][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 05:06:22,096][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 05:06:34,810][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 05:06:34,812][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5844720005989075
+prob_pointing=0.6105872988700867
+ 35%|████████████████▏                             | 103/293 [2:20:15<4:39:23, 88.23s/it][2025-12-12 05:07:50,427][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 05:07:50,427][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 05:08:03,099][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 05:08:03,101][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5952155590057373
+prob_pointing=0.5223372578620911
+ 35%|████████████████▎                             | 104/293 [2:21:44<4:38:25, 88.39s/it][2025-12-12 05:09:19,285][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 05:09:19,287][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 05:09:32,074][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 05:09:32,075][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.636384904384613
+prob_pointing=0.5906006097793579
+ 36%|████████████████▍                             | 105/293 [2:23:12<4:36:58, 88.40s/it][2025-12-12 05:10:47,810][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 05:10:47,811][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 05:11:00,555][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 05:11:00,555][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6213469505310059
+prob_pointing=0.565871000289917
+ 36%|████████████████▋                             | 106/293 [2:24:42<4:36:25, 88.69s/it][2025-12-12 05:12:17,261][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 05:12:17,263][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 05:12:30,199][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 05:12:30,201][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5766071081161499
+prob_pointing=0.6139870285987854
+ 37%|████████████████▊                             | 107/293 [2:26:10<4:34:45, 88.63s/it][2025-12-12 05:13:45,831][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [13]
+[2025-12-12 05:13:45,832][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 05:13:58,665][openpifpaf.decoder.cifcaf][INFO] - annotations 2: [13, 3]
+[2025-12-12 05:13:58,667][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5363747477531433
+prob_pointing=0.6319757699966431
+ 37%|████████████████▉                             | 108/293 [2:27:39<4:33:28, 88.69s/it][2025-12-12 05:15:14,749][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 05:15:14,751][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 05:15:27,785][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 05:15:27,786][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5886006355285645
+prob_pointing=0.5801123380661011
+ 37%|█████████████████                             | 109/293 [2:29:08<4:31:56, 88.68s/it][2025-12-12 05:16:43,362][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 05:16:43,363][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 05:16:56,342][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 05:16:56,344][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5416326522827148
+prob_pointing=0.5932543873786926
+ 38%|█████████████████▎                            | 110/293 [2:30:36<4:30:22, 88.65s/it][2025-12-12 05:18:12,015][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 05:18:12,016][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 05:18:25,056][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 05:18:25,057][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6304039359092712
+prob_pointing=0.5560618042945862
+ 38%|█████████████████▍                            | 111/293 [2:32:06<4:29:20, 88.80s/it][2025-12-12 05:19:41,330][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 05:19:41,332][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 05:19:54,598][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 05:19:54,600][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6310102343559265
+prob_pointing=0.5902630686759949
+ 38%|█████████████████▌                            | 112/293 [2:33:35<4:28:50, 89.12s/it][2025-12-12 05:21:11,274][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [14]
+[2025-12-12 05:21:11,276][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 05:21:24,648][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 05:21:24,649][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6068741679191589
+prob_pointing=0.5881673693656921
+ 39%|█████████████████▋                            | 113/293 [2:35:06<4:28:44, 89.58s/it][2025-12-12 05:22:41,894][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 05:22:41,896][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 05:22:55,244][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 05:22:55,245][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5911992192268372
+prob_pointing=0.6244072914123535
+ 39%|█████████████████▉                            | 114/293 [2:36:36<4:27:37, 89.70s/it][2025-12-12 05:24:12,009][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 05:24:12,011][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 05:24:25,550][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 05:24:25,553][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6239368915557861
+prob_pointing=0.6002247333526611
+ 39%|██████████████████                            | 115/293 [2:38:06<4:26:14, 89.74s/it][2025-12-12 05:25:41,897][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 05:25:41,898][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 05:25:55,399][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 05:25:55,400][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5305855870246887
+prob_pointing=0.6197465062141418
+ 40%|██████████████████▏                           | 116/293 [2:39:37<4:25:54, 90.14s/it][2025-12-12 05:27:13,015][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 05:27:13,019][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 05:27:26,627][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 05:27:26,632][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6284642219543457
+prob_pointing=0.5906438827514648
+ 40%|██████████████████▎                           | 117/293 [2:41:07<4:23:58, 89.99s/it][2025-12-12 05:28:42,771][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 05:28:42,773][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 05:28:56,395][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 05:28:56,399][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6467309594154358
+prob_pointing=0.6195909380912781
+ 40%|██████████████████▌                           | 118/293 [2:42:38<4:23:30, 90.35s/it][2025-12-12 05:30:13,986][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 05:30:13,988][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 05:30:27,569][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 05:30:27,570][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5584419965744019
+prob_pointing=0.5929827094078064
+ 41%|██████████████████▋                           | 119/293 [2:44:08<4:21:29, 90.17s/it][2025-12-12 05:31:43,853][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 05:31:43,855][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 05:31:57,658][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 05:31:57,662][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5872960090637207
+prob_pointing=0.5449899435043335
+ 41%|██████████████████▊                           | 120/293 [2:45:39<4:21:07, 90.56s/it][2025-12-12 05:33:15,408][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 05:33:15,410][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 05:33:29,372][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 05:33:29,374][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5438440442085266
+prob_pointing=0.6036021709442139
+ 41%|██████████████████▉                           | 121/293 [2:47:10<4:19:59, 90.69s/it][2025-12-12 05:34:46,513][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 05:34:46,515][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 05:35:00,498][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 05:35:00,500][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6059221029281616
+prob_pointing=0.605761706829071
+ 42%|███████████████████▏                          | 122/293 [2:48:41<4:18:35, 90.73s/it][2025-12-12 05:36:17,429][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 05:36:17,430][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 05:36:31,576][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 05:36:31,578][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5919227600097656
+prob_pointing=0.6023225784301758
+ 42%|███████████████████▎                          | 123/293 [2:50:12<4:17:43, 90.96s/it][2025-12-12 05:37:48,921][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 05:37:48,923][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 05:38:03,097][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 05:38:03,099][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6290326714515686
+prob_pointing=0.5931732058525085
+ 42%|███████████████████▍                          | 124/293 [2:51:43<4:15:56, 90.87s/it][2025-12-12 05:39:19,817][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 05:39:19,818][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 05:39:33,989][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 05:39:33,991][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6397038698196411
+prob_pointing=0.5784204602241516
+ 43%|███████████████████▌                          | 125/293 [2:53:15<4:15:14, 91.16s/it][2025-12-12 05:40:51,530][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 05:40:51,531][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 05:41:05,849][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 05:41:05,852][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5108500123023987
+prob_pointing=0.5426598787307739
+ 43%|███████████████████▊                          | 126/293 [2:54:47<4:14:18, 91.37s/it][2025-12-12 05:42:23,257][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 05:42:23,258][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 05:42:36,444][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 05:42:36,445][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6155635118484497
+prob_pointing=0.5842079520225525
+ 43%|███████████████████▉                          | 127/293 [2:56:17<4:11:58, 91.07s/it][2025-12-12 05:43:52,430][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [15]
+[2025-12-12 05:43:52,431][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 05:44:04,626][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 05:44:04,628][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6154680252075195
+prob_pointing=0.6216830611228943
+ 44%|████████████████████                          | 128/293 [2:57:45<4:07:48, 90.11s/it][2025-12-12 05:45:19,106][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 05:45:19,108][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 05:45:30,196][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 05:45:30,198][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5506308078765869
+prob_pointing=0.5821462273597717
+ 44%|████████████████████▎                         | 129/293 [2:59:11<4:03:05, 88.94s/it][2025-12-12 05:46:44,188][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 05:46:44,191][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 05:46:54,362][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 05:46:54,364][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5764521360397339
+prob_pointing=0.5474163293838501
+ 44%|████████████████████▍                         | 130/293 [3:00:35<3:57:28, 87.41s/it][2025-12-12 05:48:06,950][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 05:48:06,952][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 05:48:15,910][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 05:48:15,912][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5907494425773621
+prob_pointing=0.5591691732406616
+ 45%|████████████████████▌                         | 131/293 [3:01:56<3:51:00, 85.56s/it][2025-12-12 05:49:27,071][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 05:49:27,073][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 05:49:34,942][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 05:49:34,944][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5891188383102417
+prob_pointing=0.6188448667526245
+ 45%|████████████████████▋                         | 132/293 [3:03:16<3:44:36, 83.70s/it][2025-12-12 05:50:45,478][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 05:50:45,479][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 05:50:52,293][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 05:50:52,294][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5887320041656494
+prob_pointing=0.5967592000961304
+ 45%|████████████████████▉                         | 133/293 [3:04:33<3:37:56, 81.73s/it][2025-12-12 05:52:01,424][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 05:52:01,425][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 05:52:07,757][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 05:52:07,759][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5787176489830017
+prob_pointing=0.5818139910697937
+ 46%|█████████████████████                         | 134/293 [3:05:48<3:31:13, 79.71s/it][2025-12-12 05:53:16,424][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 05:53:16,426][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 05:53:22,848][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 05:53:22,850][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5743224620819092
+prob_pointing=0.5795035362243652
+ 46%|█████████████████████▏                        | 135/293 [3:07:02<3:25:54, 78.20s/it][2025-12-12 05:54:31,243][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 05:54:31,244][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 05:54:37,595][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 05:54:37,603][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5601436495780945
+prob_pointing=0.598091185092926
+ 46%|█████████████████████▎                        | 136/293 [3:08:18<3:22:28, 77.38s/it][2025-12-12 05:55:46,724][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 05:55:46,726][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 05:55:53,307][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 05:55:53,308][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5505967140197754
+prob_pointing=0.5589627027511597
+ 47%|█████████████████████▌                        | 137/293 [3:09:34<3:20:04, 76.95s/it][2025-12-12 05:57:02,807][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 05:57:02,807][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 05:57:09,391][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 05:57:09,393][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5411630272865295
+prob_pointing=0.5420709848403931
+ 47%|█████████████████████▋                        | 138/293 [3:10:50<3:17:50, 76.58s/it][2025-12-12 05:58:18,617][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 05:58:18,617][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 05:58:25,261][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 05:58:25,264][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5592482089996338
+prob_pointing=0.6003424525260925
+ 47%|█████████████████████▊                        | 139/293 [3:12:05<3:15:51, 76.31s/it][2025-12-12 05:59:34,355][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 05:59:34,355][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 05:59:40,980][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 05:59:40,982][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5701484084129333
+prob_pointing=0.5961394906044006
+ 48%|█████████████████████▉                        | 140/293 [3:13:22<3:14:43, 76.37s/it][2025-12-12 06:00:50,929][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:00:50,931][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 06:00:57,809][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:00:57,811][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5931531190872192
+prob_pointing=0.605189323425293
+ 48%|██████████████████████▏                       | 141/293 [3:14:39<3:14:11, 76.66s/it][2025-12-12 06:02:08,381][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:02:08,383][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 06:02:15,355][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:02:15,359][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5678486227989197
+prob_pointing=0.60939621925354
+ 48%|██████████████████████▎                       | 142/293 [3:15:56<3:12:50, 76.62s/it][2025-12-12 06:03:25,029][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:03:25,031][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 06:03:31,993][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:03:31,995][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5843821167945862
+prob_pointing=0.570002555847168
+ 49%|██████████████████████▍                       | 143/293 [3:17:13<3:11:51, 76.75s/it][2025-12-12 06:04:42,083][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:04:42,086][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 06:04:49,063][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:04:49,065][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5447016358375549
+prob_pointing=0.6517459154129028
+ 49%|██████████████████████▌                       | 144/293 [3:18:30<3:10:59, 76.91s/it][2025-12-12 06:05:59,432][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:05:59,434][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 06:06:06,574][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:06:06,576][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6016155481338501
+prob_pointing=0.6196978092193604
+ 49%|██████████████████████▊                       | 145/293 [3:19:47<3:09:47, 76.94s/it][2025-12-12 06:07:16,533][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:07:16,535][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 06:07:23,773][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:07:23,775][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5779101848602295
+prob_pointing=0.6366128921508789
+ 50%|██████████████████████▉                       | 146/293 [3:21:05<3:09:04, 77.17s/it][2025-12-12 06:08:34,190][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:08:34,193][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 06:08:41,459][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:08:41,460][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5862599015235901
+prob_pointing=0.6146329641342163
+ 50%|███████████████████████                       | 147/293 [3:22:23<3:08:30, 77.47s/it][2025-12-12 06:09:52,433][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:09:52,435][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 06:09:59,530][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:09:59,530][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6263860464096069
+prob_pointing=0.5505650043487549
+ 51%|███████████████████████▏                      | 148/293 [3:23:39<3:06:37, 77.22s/it][2025-12-12 06:11:09,240][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:11:09,242][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 06:11:16,507][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:11:16,509][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5341206789016724
+prob_pointing=0.5267395973205566
+ 51%|███████████████████████▍                      | 149/293 [3:24:57<3:05:42, 77.38s/it][2025-12-12 06:12:26,956][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:12:26,958][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 06:12:34,214][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:12:34,216][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.599386990070343
+prob_pointing=0.5492922067642212
+ 51%|███████████████████████▌                      | 150/293 [3:26:14<3:04:09, 77.27s/it][2025-12-12 06:13:44,073][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:13:44,075][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 06:13:51,626][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:13:51,628][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6157060265541077
+prob_pointing=0.5544632077217102
+ 52%|███████████████████████▋                      | 151/293 [3:27:32<3:03:10, 77.40s/it][2025-12-12 06:15:01,759][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:15:01,761][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 06:15:09,384][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:15:09,385][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6215060949325562
+prob_pointing=0.5592243671417236
+ 52%|███████████████████████▊                      | 152/293 [3:28:50<3:02:32, 77.67s/it][2025-12-12 06:16:20,258][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:16:20,262][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 06:16:27,802][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:16:27,804][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.628989577293396
+prob_pointing=0.6223964691162109
+ 52%|████████████████████████                      | 153/293 [3:30:08<3:01:31, 77.80s/it][2025-12-12 06:17:38,375][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:17:38,376][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 06:17:46,076][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:17:46,078][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6075993180274963
+prob_pointing=0.6104605197906494
+ 53%|████████████████████████▏                     | 154/293 [3:31:27<3:00:56, 78.11s/it][2025-12-12 06:18:57,226][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:18:57,227][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 06:19:05,164][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:19:05,166][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6138443946838379
+prob_pointing=0.5983672738075256
+ 53%|████████████████████████▎                     | 155/293 [3:32:46<3:00:10, 78.34s/it][2025-12-12 06:20:16,329][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:20:16,332][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 06:20:24,467][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:20:24,469][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6243943572044373
+prob_pointing=0.5833032131195068
+ 53%|████████████████████████▍                     | 156/293 [3:34:05<2:59:31, 78.63s/it][2025-12-12 06:21:35,682][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:21:35,684][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 06:21:43,836][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:21:43,838][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5662111639976501
+prob_pointing=0.5852345824241638
+ 54%|████████████████████████▋                     | 157/293 [3:35:24<2:58:35, 78.79s/it][2025-12-12 06:22:54,796][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:22:54,797][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 06:23:02,826][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:23:02,829][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6386827230453491
+prob_pointing=0.5856173038482666
+ 54%|████████████████████████▊                     | 158/293 [3:36:44<2:57:49, 79.03s/it][2025-12-12 06:24:14,590][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:24:14,592][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 06:24:22,966][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:24:22,967][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5419266819953918
+prob_pointing=0.609935998916626
+ 54%|████████████████████████▉                     | 159/293 [3:38:04<2:57:01, 79.27s/it][2025-12-12 06:25:34,479][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:25:34,481][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 06:25:42,569][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:25:42,571][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.566986083984375
+prob_pointing=0.5772418975830078
+ 55%|█████████████████████████                     | 160/293 [3:39:23<2:55:29, 79.17s/it][2025-12-12 06:26:53,375][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:26:53,377][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 06:27:01,490][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:27:01,492][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6045666933059692
+prob_pointing=0.5392605066299438
+ 55%|█████████████████████████▎                    | 161/293 [3:40:43<2:54:33, 79.34s/it][2025-12-12 06:28:13,229][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:28:13,232][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 06:28:21,351][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:28:21,353][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5569679737091064
+prob_pointing=0.5597329139709473
+ 55%|█████████████████████████▍                    | 162/293 [3:42:02<2:53:08, 79.30s/it][2025-12-12 06:29:32,532][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:29:32,533][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 06:29:40,829][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:29:40,831][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5957223773002625
+prob_pointing=0.5891329646110535
+ 56%|█████████████████████████▌                    | 163/293 [3:43:22<2:52:13, 79.49s/it][2025-12-12 06:30:52,494][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:30:52,496][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 06:31:00,847][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:31:00,849][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6481480002403259
+prob_pointing=0.5876371264457703
+ 56%|█████████████████████████▋                    | 164/293 [3:44:42<2:51:19, 79.69s/it][2025-12-12 06:32:12,653][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:32:12,655][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 06:32:21,194][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:32:21,195][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.620608925819397
+prob_pointing=0.5438312292098999
+ 56%|█████████████████████████▉                    | 165/293 [3:46:02<2:50:22, 79.86s/it][2025-12-12 06:33:32,988][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:33:32,992][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 06:33:41,461][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:33:41,463][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5832353234291077
+prob_pointing=0.573101282119751
+ 57%|██████████████████████████                    | 166/293 [3:47:22<2:49:05, 79.88s/it][2025-12-12 06:34:53,010][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:34:53,012][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 06:35:01,646][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:35:01,648][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6231297850608826
+prob_pointing=0.5758601427078247
+ 57%|██████████████████████████▏                   | 167/293 [3:48:42<2:47:47, 79.90s/it][2025-12-12 06:36:13,010][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:36:13,011][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 06:36:21,698][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:36:21,698][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5815014839172363
+prob_pointing=0.595784604549408
+ 57%|██████████████████████████▍                   | 168/293 [3:50:02<2:46:24, 79.87s/it][2025-12-12 06:37:32,950][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:37:32,952][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 06:37:41,639][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:37:41,641][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6057660579681396
+prob_pointing=0.6005201935768127
+ 58%|██████████████████████████▌                   | 169/293 [3:51:21<2:44:50, 79.76s/it][2025-12-12 06:38:52,534][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:38:52,536][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 06:39:01,348][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:39:01,351][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6242244839668274
+prob_pointing=0.6270055174827576
+ 58%|██████████████████████████▋                   | 170/293 [3:52:41<2:43:44, 79.88s/it][2025-12-12 06:40:12,686][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:40:12,687][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 06:40:22,068][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:40:22,070][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.594093382358551
+prob_pointing=0.6505098938941956
+ 58%|██████████████████████████▊                   | 171/293 [3:54:03<2:43:14, 80.28s/it][2025-12-12 06:41:34,066][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:41:34,068][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 06:41:43,077][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:41:43,077][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6841974258422852
+prob_pointing=0.5712790489196777
+ 59%|███████████████████████████                   | 172/293 [3:55:23<2:42:10, 80.42s/it][2025-12-12 06:42:54,835][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:42:54,838][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 06:43:03,882][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:43:03,884][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5593748688697815
+prob_pointing=0.5535103678703308
+ 59%|███████████████████████████▏                  | 173/293 [3:56:45<2:41:41, 80.85s/it][2025-12-12 06:44:16,801][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:44:16,806][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 06:44:26,065][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:44:26,067][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.534382700920105
+prob_pointing=0.5332413911819458
+ 59%|███████████████████████████▎                  | 174/293 [3:58:07<2:41:00, 81.18s/it][2025-12-12 06:45:38,752][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:45:38,754][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 06:45:47,981][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:45:47,981][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6216161251068115
+prob_pointing=0.6275553703308105
+ 60%|███████████████████████████▍                  | 175/293 [3:59:29<2:39:58, 81.34s/it][2025-12-12 06:47:00,528][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:47:00,528][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 06:47:09,729][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:47:09,731][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6306397318840027
+prob_pointing=0.5984549522399902
+ 60%|███████████████████████████▋                  | 176/293 [4:00:50<2:38:21, 81.21s/it][2025-12-12 06:48:21,475][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:48:21,477][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 06:48:30,756][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:48:30,758][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6019105315208435
+prob_pointing=0.5662019848823547
+ 60%|███████████████████████████▊                  | 177/293 [4:02:11<2:36:55, 81.17s/it][2025-12-12 06:49:42,658][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:49:42,661][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 06:49:51,938][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:49:51,941][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.58689945936203
+prob_pointing=0.5905264019966125
+ 61%|███████████████████████████▉                  | 178/293 [4:03:33<2:36:05, 81.44s/it][2025-12-12 06:51:04,817][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:51:04,819][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 06:51:14,172][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:51:14,175][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5061708092689514
+prob_pointing=0.5780360698699951
+ 61%|████████████████████████████                  | 179/293 [4:04:55<2:34:48, 81.48s/it][2025-12-12 06:52:26,439][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:52:26,441][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 06:52:35,802][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:52:35,805][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6228722333908081
+prob_pointing=0.6107940673828125
+ 61%|████████████████████████████▎                 | 180/293 [4:06:16<2:33:39, 81.59s/it][2025-12-12 06:53:48,343][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:53:48,345][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 06:53:57,711][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:53:57,713][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6005867123603821
+prob_pointing=0.5512299537658691
+ 62%|████████████████████████████▍                 | 181/293 [4:07:38<2:32:23, 81.64s/it][2025-12-12 06:55:10,087][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:55:10,089][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 06:55:19,713][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:55:19,714][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6179999113082886
+prob_pointing=0.6268013119697571
+ 62%|████████████████████████████▌                 | 182/293 [4:08:59<2:30:45, 81.49s/it][2025-12-12 06:56:31,357][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:56:31,357][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 06:56:40,957][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:56:40,959][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.610241711139679
+prob_pointing=0.5636298060417175
+ 62%|████████████████████████████▋                 | 183/293 [4:10:21<2:29:19, 81.45s/it][2025-12-12 06:57:52,870][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:57:52,871][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 06:58:02,536][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:58:02,538][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.589385986328125
+prob_pointing=0.5715601444244385
+ 63%|████████████████████████████▉                 | 184/293 [4:11:43<2:28:26, 81.71s/it][2025-12-12 06:59:15,192][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:59:15,194][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 06:59:25,053][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 06:59:25,055][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5929807424545288
+prob_pointing=0.5685094594955444
+ 63%|█████████████████████████████                 | 185/293 [4:13:06<2:27:43, 82.07s/it][2025-12-12 07:00:38,153][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:00:38,154][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 07:00:47,951][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:00:47,953][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5758802890777588
+prob_pointing=0.6137272715568542
+ 63%|█████████████████████████████▏                | 186/293 [4:14:28<2:26:24, 82.09s/it][2025-12-12 07:02:00,364][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:02:00,365][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 07:02:10,239][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:02:10,241][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5416986346244812
+prob_pointing=0.6463924646377563
+ 64%|█████████████████████████████▎                | 187/293 [4:15:50<2:25:08, 82.16s/it][2025-12-12 07:03:22,707][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:03:22,709][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 07:03:32,677][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:03:32,678][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.582800567150116
+prob_pointing=0.5976513624191284
+ 64%|█████████████████████████████▌                | 188/293 [4:17:13<2:23:57, 82.26s/it][2025-12-12 07:04:45,336][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:04:45,338][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 07:04:55,433][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:04:55,433][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5748903155326843
+prob_pointing=0.6016793251037598
+ 65%|█████████████████████████████▋                | 189/293 [4:18:36<2:23:09, 82.59s/it][2025-12-12 07:06:08,808][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:06:08,809][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 07:06:19,028][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:06:19,030][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6296841502189636
+prob_pointing=0.5666693449020386
+ 65%|█████████████████████████████▊                | 190/293 [4:20:00<2:22:22, 82.94s/it][2025-12-12 07:07:32,526][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:07:32,526][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 07:07:42,773][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:07:42,775][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5110865831375122
+prob_pointing=0.6038150191307068
+ 65%|█████████████████████████████▉                | 191/293 [4:21:23<2:21:08, 83.02s/it][2025-12-12 07:08:55,805][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:08:55,806][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 07:09:06,128][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:09:06,130][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6538193225860596
+prob_pointing=0.6270372867584229
+ 66%|██████████████████████████████▏               | 192/293 [4:22:47<2:20:06, 83.23s/it][2025-12-12 07:10:19,705][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:10:19,707][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 07:10:30,047][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:10:30,049][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5763754844665527
+prob_pointing=0.5789986848831177
+ 66%|██████████████████████████████▎               | 193/293 [4:24:11<2:19:05, 83.45s/it][2025-12-12 07:11:43,709][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:11:43,711][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 07:11:54,039][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:11:54,041][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5602864623069763
+prob_pointing=0.5702367424964905
+ 66%|██████████████████████████████▍               | 194/293 [4:25:35<2:18:03, 83.67s/it][2025-12-12 07:13:07,924][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:13:07,926][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 07:13:18,357][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:13:18,359][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6081538796424866
+prob_pointing=0.6290091276168823
+ 67%|██████████████████████████████▌               | 195/293 [4:26:59<2:16:35, 83.63s/it][2025-12-12 07:14:31,509][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:14:31,511][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 07:14:42,010][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:14:42,011][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5901903510093689
+prob_pointing=0.6246897578239441
+ 67%|██████████████████████████████▊               | 196/293 [4:28:22<2:15:11, 83.63s/it][2025-12-12 07:15:55,293][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:15:55,294][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 07:16:05,856][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:16:05,857][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5691251754760742
+prob_pointing=0.5502831339836121
+ 67%|██████████████████████████████▉               | 197/293 [4:29:46<2:14:07, 83.82s/it][2025-12-12 07:17:19,568][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:17:19,570][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 07:17:30,306][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:17:30,308][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6284058094024658
+prob_pointing=0.6191059947013855
+ 68%|███████████████████████████████               | 198/293 [4:31:11<2:13:03, 84.03s/it][2025-12-12 07:18:44,115][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:18:44,117][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 07:18:54,881][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:18:54,883][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.567948043346405
+prob_pointing=0.5877728462219238
+ 68%|███████████████████████████████▏              | 199/293 [4:32:36<2:11:52, 84.18s/it][2025-12-12 07:20:08,759][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:20:08,761][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 07:20:19,522][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:20:19,524][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5581787824630737
+prob_pointing=0.5645856857299805
+ 68%|███████████████████████████████▍              | 200/293 [4:34:00<2:10:38, 84.28s/it][2025-12-12 07:21:33,413][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:21:33,414][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 07:21:44,225][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:21:44,227][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6233275532722473
+prob_pointing=0.6065001487731934
+ 69%|███████████████████████████████▌              | 201/293 [4:35:25<2:09:28, 84.44s/it][2025-12-12 07:22:58,209][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:22:58,213][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 07:23:09,066][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:23:09,068][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6272437572479248
+prob_pointing=0.6128618717193604
+ 69%|███████████████████████████████▋              | 202/293 [4:36:49<2:08:08, 84.49s/it][2025-12-12 07:24:23,145][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:24:23,148][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 07:24:34,040][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:24:34,042][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5785470008850098
+prob_pointing=0.5801090598106384
+ 69%|███████████████████████████████▊              | 203/293 [4:38:14<2:06:54, 84.61s/it][2025-12-12 07:25:47,940][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:25:47,942][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 07:25:58,947][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:25:58,950][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.596549391746521
+prob_pointing=0.5344970226287842
+ 70%|████████████████████████████████              | 204/293 [4:39:39<2:05:39, 84.72s/it][2025-12-12 07:27:12,846][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:27:12,848][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 07:27:23,967][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:27:23,969][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6202572584152222
+prob_pointing=0.5762637853622437
+ 70%|████████████████████████████████▏             | 205/293 [4:41:03<2:04:00, 84.55s/it][2025-12-12 07:28:37,129][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:28:37,131][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 07:28:48,144][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:28:48,146][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5455643534660339
+prob_pointing=0.6422935128211975
+ 70%|████████████████████████████████▎             | 206/293 [4:42:30<2:03:38, 85.27s/it][2025-12-12 07:30:04,209][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:30:04,211][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 07:30:15,570][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:30:15,573][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.499467134475708
+prob_pointing=0.5336313247680664
+ 71%|████████████████████████████████▍             | 207/293 [4:43:57<2:02:47, 85.67s/it][2025-12-12 07:31:30,766][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:31:30,768][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 07:31:42,141][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:31:42,143][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5645747184753418
+prob_pointing=0.6228965520858765
+ 71%|████████████████████████████████▋             | 208/293 [4:45:23<2:01:22, 85.68s/it][2025-12-12 07:32:56,607][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:32:56,609][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 07:33:07,883][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:33:07,884][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5971876978874207
+prob_pointing=0.560404360294342
+ 71%|████████████████████████████████▊             | 209/293 [4:46:49<2:00:10, 85.84s/it][2025-12-12 07:34:22,954][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:34:22,955][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 07:34:34,505][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:34:34,506][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5677701234817505
+prob_pointing=0.6405584216117859
+ 72%|████████████████████████████████▉             | 210/293 [4:48:15<1:58:46, 85.86s/it][2025-12-12 07:35:48,799][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:35:48,801][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 07:36:00,401][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:36:00,402][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6654798984527588
+prob_pointing=0.5718115568161011
+ 72%|█████████████████████████████████▏            | 211/293 [4:49:42<1:57:43, 86.15s/it][2025-12-12 07:37:15,731][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:37:15,733][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 07:37:27,228][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:37:27,230][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6036573648452759
+prob_pointing=0.5835273265838623
+ 72%|█████████████████████████████████▎            | 212/293 [4:51:08<1:56:33, 86.34s/it][2025-12-12 07:38:42,492][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:38:42,493][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 07:38:54,309][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:38:54,315][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6020634174346924
+prob_pointing=0.6521073579788208
+ 73%|█████████████████████████████████▍            | 213/293 [4:52:34<1:54:52, 86.16s/it][2025-12-12 07:40:08,417][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:40:08,419][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 07:40:20,105][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:40:20,107][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5815864205360413
+prob_pointing=0.4927176535129547
+ 73%|█████████████████████████████████▌            | 214/293 [4:54:01<1:53:38, 86.30s/it][2025-12-12 07:41:35,083][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:41:35,086][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 07:41:46,801][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:41:46,803][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6301056146621704
+prob_pointing=0.5597647428512573
+ 73%|█████████████████████████████████▊            | 215/293 [4:55:27<1:52:05, 86.22s/it][2025-12-12 07:43:01,134][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:43:01,137][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 07:43:12,888][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:43:12,890][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.599568247795105
+prob_pointing=0.5689724087715149
+ 74%|█████████████████████████████████▉            | 216/293 [4:56:54<1:50:51, 86.38s/it][2025-12-12 07:44:28,107][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:44:28,109][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 07:44:39,963][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:44:39,963][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6069625020027161
+prob_pointing=0.5054768919944763
+ 74%|██████████████████████████████████            | 217/293 [4:58:21<1:49:42, 86.61s/it][2025-12-12 07:45:55,225][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:45:55,226][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 07:46:07,156][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:46:07,158][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5737417340278625
+prob_pointing=0.5800554752349854
+ 74%|██████████████████████████████████▏           | 218/293 [4:59:47<1:48:18, 86.65s/it][2025-12-12 07:47:21,942][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:47:21,943][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 07:47:34,027][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:47:34,035][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5935049653053284
+prob_pointing=0.5222593545913696
+ 75%|██████████████████████████████████▍           | 219/293 [5:01:14<1:46:59, 86.75s/it][2025-12-12 07:48:49,006][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:48:49,009][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 07:49:01,087][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:49:01,089][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5836504697799683
+prob_pointing=0.5734188556671143
+ 75%|██████████████████████████████████▌           | 220/293 [5:02:41<1:45:36, 86.80s/it][2025-12-12 07:50:16,127][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:50:16,128][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 07:50:28,649][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:50:28,651][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5525110363960266
+prob_pointing=0.5837712287902832
+ 75%|██████████████████████████████████▋           | 221/293 [5:04:10<1:44:44, 87.28s/it][2025-12-12 07:51:44,492][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:51:44,494][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 07:51:56,748][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:51:56,749][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.608448326587677
+prob_pointing=0.5824182033538818
+ 76%|██████████████████████████████████▊           | 222/293 [5:05:37<1:43:17, 87.29s/it][2025-12-12 07:53:11,829][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:53:11,830][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 07:53:24,355][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:53:24,360][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6145228743553162
+prob_pointing=0.6594201922416687
+ 76%|███████████████████████████████████           | 223/293 [5:07:05<1:42:00, 87.43s/it][2025-12-12 07:54:39,927][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:54:39,930][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 07:54:52,211][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:54:52,213][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6011888384819031
+prob_pointing=0.6465868353843689
+ 76%|███████████████████████████████████▏          | 224/293 [5:08:33<1:40:44, 87.61s/it][2025-12-12 07:56:07,768][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:56:07,769][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 07:56:20,355][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:56:20,357][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5874606370925903
+prob_pointing=0.6208691000938416
+ 77%|███████████████████████████████████▎          | 225/293 [5:10:01<1:39:21, 87.67s/it][2025-12-12 07:57:35,638][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:57:35,642][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 07:57:48,200][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:57:48,202][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5615037083625793
+prob_pointing=0.5808118581771851
+ 77%|███████████████████████████████████▍          | 226/293 [5:11:28<1:37:55, 87.69s/it][2025-12-12 07:59:03,475][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:59:03,478][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 07:59:16,175][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 07:59:16,178][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5820414423942566
+prob_pointing=0.5451887249946594
+ 77%|███████████████████████████████████▋          | 227/293 [5:12:57<1:36:37, 87.84s/it][2025-12-12 08:00:31,764][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:00:31,766][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 08:00:44,519][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:00:44,521][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.623004138469696
+prob_pointing=0.6210634708404541
+ 78%|███████████████████████████████████▊          | 228/293 [5:14:25<1:35:20, 88.01s/it][2025-12-12 08:02:00,205][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:02:00,207][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 08:02:12,892][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:02:12,893][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6381597518920898
+prob_pointing=0.5593656301498413
+ 78%|███████████████████████████████████▉          | 229/293 [5:15:53<1:33:58, 88.10s/it][2025-12-12 08:03:28,542][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:03:28,544][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 08:03:41,306][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:03:41,308][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6502355337142944
+prob_pointing=0.6284977197647095
+ 78%|████████████████████████████████████          | 230/293 [5:17:22<1:32:44, 88.32s/it][2025-12-12 08:04:57,625][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:04:57,626][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 08:05:10,410][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:05:10,412][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6336963772773743
+prob_pointing=0.5688596963882446
+ 79%|████████████████████████████████████▎         | 231/293 [5:18:52<1:31:34, 88.62s/it][2025-12-12 08:06:26,866][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:06:26,867][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 08:06:39,777][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:06:39,779][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5511584281921387
+prob_pointing=0.5880176424980164
+ 79%|████████████████████████████████████▍         | 232/293 [5:20:20<1:30:03, 88.59s/it][2025-12-12 08:07:55,555][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:07:55,557][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 08:08:08,366][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:08:08,371][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6282532811164856
+prob_pointing=0.6096402406692505
+ 80%|████████████████████████████████████▌         | 233/293 [5:21:49<1:28:39, 88.67s/it][2025-12-12 08:09:24,423][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:09:24,426][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 08:09:37,487][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:09:37,490][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.49748343229293823
+prob_pointing=0.5635814666748047
+ 80%|████████████████████████████████████▋         | 234/293 [5:23:17<1:27:09, 88.64s/it][2025-12-12 08:10:53,054][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:10:53,056][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 08:11:06,067][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:11:06,069][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5365215539932251
+prob_pointing=0.5466458201408386
+ 80%|████████████████████████████████████▉         | 235/293 [5:24:46<1:25:44, 88.70s/it][2025-12-12 08:12:21,973][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:12:21,974][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 08:12:35,105][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:12:35,120][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6120279431343079
+prob_pointing=0.6006357669830322
+ 81%|█████████████████████████████████████         | 236/293 [5:26:16<1:24:25, 88.86s/it][2025-12-12 08:13:51,359][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:13:51,362][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 08:14:04,595][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:14:04,597][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5617195963859558
+prob_pointing=0.5569607615470886
+ 81%|█████████████████████████████████████▏        | 237/293 [5:27:46<1:23:16, 89.22s/it][2025-12-12 08:15:21,373][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:15:21,375][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 08:15:34,738][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:15:34,741][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5758503079414368
+prob_pointing=0.5928298830986023
+ 81%|█████████████████████████████████████▎        | 238/293 [5:29:15<1:21:50, 89.28s/it][2025-12-12 08:16:50,937][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:16:50,938][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 08:17:04,152][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:17:04,154][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5885153412818909
+prob_pointing=0.5635367631912231
+ 82%|█████████████████████████████████████▌        | 239/293 [5:30:45<1:20:32, 89.50s/it][2025-12-12 08:18:20,929][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:18:20,931][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 08:18:34,300][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:18:34,302][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.577091634273529
+prob_pointing=0.6237953901290894
+ 82%|█████████████████████████████████████▋        | 240/293 [5:32:14<1:19:02, 89.48s/it][2025-12-12 08:19:50,578][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:19:50,580][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 08:20:03,932][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:20:03,934][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5505604147911072
+prob_pointing=0.5840134024620056
+ 82%|█████████████████████████████████████▊        | 241/293 [5:33:45<1:17:47, 89.76s/it][2025-12-12 08:21:20,905][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:21:20,914][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 08:21:34,626][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:21:34,628][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5093168020248413
+prob_pointing=0.5216401219367981
+ 83%|█████████████████████████████████████▉        | 242/293 [5:35:15<1:16:23, 89.86s/it][2025-12-12 08:22:51,155][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:22:51,157][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 08:23:04,628][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:23:04,631][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6109556555747986
+prob_pointing=0.5708757042884827
+ 83%|██████████████████████████████████████▏       | 243/293 [5:36:45<1:14:51, 89.82s/it][2025-12-12 08:24:21,081][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:24:21,083][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 08:24:34,920][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:24:34,923][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5580462217330933
+prob_pointing=0.5513014197349548
+ 83%|██████████████████████████████████████▎       | 244/293 [5:38:15<1:13:30, 90.00s/it][2025-12-12 08:25:51,520][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:25:51,523][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 08:26:05,326][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:26:05,328][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6572584509849548
+prob_pointing=0.6110484600067139
+ 84%|██████████████████████████████████████▍       | 245/293 [5:39:46<1:12:12, 90.27s/it][2025-12-12 08:27:22,480][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:27:22,482][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 08:27:36,248][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:27:36,251][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5830416679382324
+prob_pointing=0.5477361083030701
+ 84%|██████████████████████████████████████▌       | 246/293 [5:41:17<1:10:51, 90.46s/it][2025-12-12 08:28:53,531][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:28:53,535][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 08:29:07,435][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:29:07,439][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5924713611602783
+prob_pointing=0.5770806670188904
+ 84%|██████████████████████████████████████▊       | 247/293 [5:42:48<1:09:29, 90.64s/it][2025-12-12 08:30:24,416][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:30:24,417][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 08:30:38,364][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:30:38,366][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5983631014823914
+prob_pointing=0.5826202034950256
+ 85%|██████████████████████████████████████▉       | 248/293 [5:44:20<1:08:12, 90.95s/it][2025-12-12 08:31:56,249][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:31:56,251][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 08:32:10,375][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:32:10,376][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6016249656677246
+prob_pointing=0.5618191957473755
+ 85%|███████████████████████████████████████       | 249/293 [5:45:51<1:06:45, 91.04s/it][2025-12-12 08:33:27,611][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:33:27,613][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 08:33:41,593][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:33:41,595][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6481907963752747
+prob_pointing=0.6080289483070374
+ 85%|███████████████████████████████████████▏      | 250/293 [5:47:22<1:05:15, 91.05s/it][2025-12-12 08:34:58,655][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:34:58,655][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 08:35:12,984][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:35:12,986][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.604173481464386
+prob_pointing=0.49357277154922485
+ 86%|███████████████████████████████████████▍      | 251/293 [5:48:53<1:03:42, 91.01s/it][2025-12-12 08:36:29,156][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:36:29,157][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 08:36:42,397][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:36:42,399][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.61436527967453
+prob_pointing=0.6143267154693604
+ 86%|███████████████████████████████████████▌      | 252/293 [5:50:23<1:02:05, 90.85s/it][2025-12-12 08:37:58,603][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:37:58,605][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 08:38:10,711][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:38:10,713][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5762864947319031
+prob_pointing=0.6236211657524109
+ 86%|█████████████████████████████████████████▍      | 253/293 [5:51:51<59:53, 89.84s/it][2025-12-12 08:39:25,055][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:39:25,056][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 08:39:36,309][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:39:36,311][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6302236318588257
+prob_pointing=0.5817291736602783
+ 87%|█████████████████████████████████████████▌      | 254/293 [5:53:16<57:24, 88.32s/it][2025-12-12 08:40:48,851][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:40:48,853][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 08:40:58,839][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:40:58,841][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.608352780342102
+prob_pointing=0.6084088683128357
+ 87%|█████████████████████████████████████████▊      | 255/293 [5:54:38<54:44, 86.43s/it][2025-12-12 08:42:09,641][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:42:09,643][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 08:42:18,585][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:42:18,589][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6362934112548828
+prob_pointing=0.5283792614936829
+ 87%|█████████████████████████████████████████▉      | 256/293 [5:55:57<51:58, 84.27s/it][2025-12-12 08:43:27,847][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:43:27,848][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 08:43:35,690][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:43:35,692][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6046057939529419
+prob_pointing=0.5742188096046448
+ 88%|██████████████████████████████████████████      | 257/293 [5:57:15<49:31, 82.54s/it][2025-12-12 08:44:45,236][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 08:44:45,239][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 08:44:52,004][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 08:44:52,005][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6251196265220642
+prob_pointing=0.5632528066635132
+ 88%|██████████████████████████████████████████▎     | 258/293 [5:58:33<47:13, 80.96s/it][2025-12-12 08:46:01,367][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 08:46:01,369][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 08:46:07,683][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:46:07,685][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6318710446357727
+prob_pointing=0.5290786623954773
+ 88%|██████████████████████████████████████████▍     | 259/293 [5:59:48<44:58, 79.36s/it][2025-12-12 08:47:17,128][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:47:17,130][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 08:47:23,568][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:47:23,570][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6254947781562805
+prob_pointing=0.6476035118103027
+ 89%|██████████████████████████████████████████▌     | 260/293 [6:01:04<43:04, 78.31s/it][2025-12-12 08:48:33,053][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:48:33,055][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 08:48:39,442][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:48:39,443][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.572873592376709
+prob_pointing=0.6055790781974792
+ 89%|██████████████████████████████████████████▊     | 261/293 [6:02:20<41:23, 77.62s/it][2025-12-12 08:49:49,143][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:49:49,146][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 08:49:55,617][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:49:55,618][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.559827983379364
+prob_pointing=0.5875971913337708
+ 89%|██████████████████████████████████████████▉     | 262/293 [6:03:36<39:52, 77.18s/it][2025-12-12 08:51:05,313][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:51:05,315][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 08:51:12,036][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [16]
+[2025-12-12 08:51:12,038][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.615401566028595
+prob_pointing=0.607254683971405
+ 90%|███████████████████████████████████████████     | 263/293 [6:04:53<38:31, 77.06s/it][2025-12-12 08:52:22,252][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 08:52:22,253][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 08:52:28,932][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 08:52:28,934][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5542787313461304
+prob_pointing=0.6045857071876526
+ 90%|███████████████████████████████████████████▏    | 264/293 [6:06:09<37:07, 76.81s/it][2025-12-12 08:53:38,460][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 08:53:38,462][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 08:53:45,179][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 08:53:45,181][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6149128079414368
+prob_pointing=0.5662954449653625
+ 90%|███████████████████████████████████████████▍    | 265/293 [6:07:25<35:44, 76.58s/it][2025-12-12 08:54:54,605][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 08:54:54,620][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 08:55:01,417][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 08:55:01,420][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5617468357086182
+prob_pointing=0.5652014017105103
+ 91%|███████████████████████████████████████████▌    | 266/293 [6:08:42<34:27, 76.56s/it][2025-12-12 08:56:11,197][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 08:56:11,199][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 08:56:17,969][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 08:56:17,971][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5623457431793213
+prob_pointing=0.5606204867362976
+ 91%|███████████████████████████████████████████▋    | 267/293 [6:09:58<33:08, 76.48s/it][2025-12-12 08:57:27,555][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 08:57:27,557][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 08:57:34,423][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 08:57:34,425][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6157388687133789
+prob_pointing=0.6086218357086182
+ 91%|███████████████████████████████████████████▉    | 268/293 [6:11:15<31:52, 76.51s/it][2025-12-12 08:58:44,183][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 08:58:44,184][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 08:58:51,165][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 08:58:51,167][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5841533541679382
+prob_pointing=0.5571436882019043
+ 92%|████████████████████████████████████████████    | 269/293 [6:12:32<30:39, 76.66s/it][2025-12-12 09:00:01,334][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 09:00:01,335][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 09:00:08,390][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 09:00:08,392][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5913949012756348
+prob_pointing=0.6588248014450073
+ 92%|████████████████████████████████████████████▏   | 270/293 [6:13:49<29:26, 76.80s/it][2025-12-12 09:01:18,405][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 09:01:18,406][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 09:01:25,541][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 09:01:25,543][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5420472621917725
+prob_pointing=0.5098587274551392
+ 92%|████████████████████████████████████████████▍   | 271/293 [6:15:06<28:09, 76.81s/it][2025-12-12 09:02:35,400][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 09:02:35,401][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 09:02:42,554][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 09:02:42,555][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5835384726524353
+prob_pointing=0.5889008045196533
+ 93%|████████████████████████████████████████████▌   | 272/293 [6:16:23<26:56, 76.96s/it][2025-12-12 09:03:52,621][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 09:03:52,624][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 09:03:59,877][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 09:03:59,880][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6087387800216675
+prob_pointing=0.5179730653762817
+ 93%|████████████████████████████████████████████▋   | 273/293 [6:17:41<25:46, 77.33s/it][2025-12-12 09:05:10,988][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 09:05:10,990][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 09:05:18,479][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 09:05:18,481][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5668159127235413
+prob_pointing=0.575472891330719
+ 94%|████████████████████████████████████████████▉   | 274/293 [6:18:59<24:30, 77.42s/it][2025-12-12 09:06:28,690][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 09:06:28,692][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 09:06:36,042][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 09:06:36,042][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5988996028900146
+prob_pointing=0.6140906810760498
+ 94%|█████████████████████████████████████████████   | 275/293 [6:20:17<23:15, 77.54s/it][2025-12-12 09:07:46,575][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 09:07:46,578][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 09:07:54,050][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 09:07:54,053][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5763517022132874
+prob_pointing=0.5701586604118347
+ 94%|█████████████████████████████████████████████▏  | 276/293 [6:21:34<21:59, 77.61s/it][2025-12-12 09:09:04,357][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 09:09:04,358][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 09:09:11,869][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 09:09:11,871][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6100028157234192
+prob_pointing=0.6322324275970459
+ 95%|█████████████████████████████████████████████▍  | 277/293 [6:22:53<20:45, 77.84s/it][2025-12-12 09:10:22,916][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 09:10:22,917][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 09:10:30,441][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 09:10:30,443][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6360588073730469
+prob_pointing=0.5811855792999268
+ 95%|█████████████████████████████████████████████▌  | 278/293 [6:24:11<19:29, 77.94s/it][2025-12-12 09:11:41,059][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 09:11:41,060][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 09:11:48,589][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 09:11:48,591][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5877274870872498
+prob_pointing=0.5429144501686096
+ 95%|█████████████████████████████████████████████▋  | 279/293 [6:25:29<18:10, 77.88s/it][2025-12-12 09:12:58,937][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 09:12:58,940][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 09:13:06,649][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 09:13:06,650][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5789248943328857
+prob_pointing=0.5896478891372681
+ 96%|█████████████████████████████████████████████▊  | 280/293 [6:26:47<16:54, 78.03s/it][2025-12-12 09:14:17,317][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 09:14:17,318][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 09:14:25,179][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 09:14:25,181][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5511114001274109
+prob_pointing=0.5400344729423523
+ 96%|██████████████████████████████████████████████  | 281/293 [6:28:06<15:40, 78.34s/it][2025-12-12 09:15:36,495][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 09:15:36,495][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 09:15:44,465][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 09:15:44,465][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5976211428642273
+prob_pointing=0.5687360763549805
+ 96%|██████████████████████████████████████████████▏ | 282/293 [6:29:26<14:26, 78.78s/it][2025-12-12 09:16:56,320][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 09:16:56,322][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 09:17:04,017][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 09:17:04,019][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6056838035583496
+prob_pointing=0.6225064992904663
+ 97%|██████████████████████████████████████████████▎ | 283/293 [6:30:45<13:07, 78.71s/it][2025-12-12 09:18:14,930][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 09:18:14,931][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 09:18:22,971][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 09:18:22,972][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5821226239204407
+prob_pointing=0.5981417894363403
+ 97%|██████████████████████████████████████████████▌ | 284/293 [6:32:04<11:50, 78.97s/it][2025-12-12 09:19:34,579][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 09:19:34,581][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 09:19:42,609][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 09:19:42,612][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6280864477157593
+prob_pointing=0.5962989330291748
+ 97%|██████████████████████████████████████████████▋ | 285/293 [6:33:24<10:33, 79.17s/it][2025-12-12 09:20:54,364][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 09:20:54,365][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 09:21:02,489][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 09:21:02,490][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6238414645195007
+prob_pointing=0.6279320120811462
+ 98%|██████████████████████████████████████████████▊ | 286/293 [6:34:44<09:16, 79.53s/it][2025-12-12 09:22:14,841][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 09:22:14,844][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 09:22:23,017][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 09:22:23,018][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5627502799034119
+prob_pointing=0.5650577545166016
+ 98%|███████████████████████████████████████████████ | 287/293 [6:36:04<07:57, 79.64s/it][2025-12-12 09:23:34,808][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 09:23:34,810][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 09:23:43,039][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 09:23:43,041][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6232001781463623
+prob_pointing=0.6130262017250061
+ 98%|███████████████████████████████████████████████▏| 288/293 [6:37:24<06:38, 79.63s/it][2025-12-12 09:24:54,371][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 09:24:54,373][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 09:25:02,610][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 09:25:02,612][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5818189978599548
+prob_pointing=0.6174564361572266
+ 99%|███████████████████████████████████████████████▎| 289/293 [6:38:43<05:17, 79.49s/it][2025-12-12 09:26:13,529][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 09:26:13,530][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 09:26:21,884][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 09:26:21,886][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5434575080871582
+prob_pointing=0.5315967202186584
+ 99%|███████████████████████████████████████████████▌| 290/293 [6:40:03<03:59, 79.73s/it][2025-12-12 09:27:33,841][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 09:27:33,843][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 09:27:42,218][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 09:27:42,220][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5960990786552429
+prob_pointing=0.6164575815200806
+ 99%|███████████████████████████████████████████████▋| 291/293 [6:41:22<02:39, 79.60s/it][2025-12-12 09:28:53,161][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 09:28:53,163][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 09:29:01,598][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 09:29:01,601][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.5992617607116699
+prob_pointing=0.5814384818077087
+100%|███████████████████████████████████████████████▊| 292/293 [6:42:42<01:19, 79.60s/it][2025-12-12 09:30:12,837][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 09:30:12,839][openpifpaf.predictor][INFO] - batch 0: no-file-name
+[2025-12-12 09:30:21,333][openpifpaf.decoder.cifcaf][INFO] - annotations 1: [17]
+[2025-12-12 09:30:21,335][openpifpaf.predictor][INFO] - batch 0: no-file-name
+prob_pointing=0.6328545808792114
+prob_pointing=0.545714795589447
+100%|████████████████████████████████████████████████| 293/293 [6:44:02<00:00, 82.74s/it]
+
+
