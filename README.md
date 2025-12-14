@@ -1,90 +1,120 @@
-# DeePoint: Visual Pointing Recognition and Direction Estimation, ICCV 2023
+This repository is a structured reproduction and experimental extension of the DeePoint model
+(Visual Pointing Recognition and Direction Estimation, ICCV 2023).
 
-This repository provides an implementation of our paper [DeePoint: Visual Pointing Recognition and Direction Estimation](https://openaccess.thecvf.com/content/ICCV2023/html/Nakamura_DeePoint_Visual_Pointing_Recognition_and_Direction_Estimation_ICCV_2023_paper.html) in ICCV 2023. If you use our code and data please cite our paper.
+The project is organized into three branches:
+- main: reproduction of the original demo using the authors’ pretrained weights
+- baseline-small: training a small baseline model on a limited subset of the DP Dataset
+- augmented-small: training a small model with modified data augmentation using the same subset
 
-Please note that this is research software and may contain bugs or other issues – please use it at your own risk. If you experience major problems with it, you may contact us, but please note that we do not have the resources to deal with all issues.
+The purpose of this organization is to clearly separate:
+1) exact reproduction of the original work,
+2) a controlled small-data baseline experiment,
+3) an augmentation-based improvement experiment.
 
+────────────────────────
+REPOSITORY STRUCTURE
+────────────────────────
 
-```
-@InProceedings{Nakamura_2023_ICCV,
-	author    = {Shu Nakamura and Yasutomo Kawanishi and Shohei Nobuhara and Ko Nishino},
-	title     = {DeePoint: Visual Pointing Recognition and Direction Estimation},
-	booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
-	month     = {October},
-	year      = {2023},
-}
-```
+Top-level folders:
 
-![DeePoint Architecture](./img/DeePoint_architecture.jpg)
+conf/
+  Configuration files used by Hydra.
+  - base.yaml controls global experiment settings.
+  - data/DP.yaml controls dataset paths and venue selection.
 
-## Prerequisites
-We tested our code with `python3.10` with external libraries including:
-- `numpy`
-- `opencv-python`
-- `opencv-contrib-python`
-- `torch`
-- `torchvision`
-- `pytorch-lightning`
+src/
+  Core code.
+  - main.py: training and evaluation entry point (PyTorch Lightning)
+  - demo.py: demo pipeline for running a trained model on a video
+  - dataset.py: dataset loading, preprocessing, and token generation
+  - model/: transformer-based pointing network
+  - pl_module.py: Lightning module wrapper
 
-Please refer to [environment/pip_freeze.txt](environment/pip_freeze.txt) for the specific versions we used.  
-You can also use `singularity` to replicate our environment:
-```bash
-singularity build environment/deepoint.sif environment/deepoint.def
-singularity run --nv environment/deepoint.sif
-```
+demo/
+  Demo inputs and outputs.
+  - example.mp4: input demo video
+  - processed demo videos are written here when running demo.py
 
-## Usage
+results/
+  Used in experimental branches to store outputs and checkpoints
+  (not populated in main by default).
 
-### Demo
-You can download the pretrained model from [here](https://drive.google.com/file/d/1I887Y_G27sPf6QaFfMDTJoHVcTR-pTR_/view?usp=drive_link).
-Download it and save the file as `models/weight.ckpt`.
+lightning_logs/
+  Automatically created during training.
+  Contains TensorBoard logs and trained checkpoints.
+  Not committed by default.
 
-You can apply the model on your video and visualize the result by running the script below.
-```
-python src/demo.py movie=./demo/example.mp4 lr=l ckpt=./models/weight.ckpt
-```
-- The video has to contain one person within the frame and the person had better shows the whole body in the frame.
-- You need to specify the pointing hand (left or right) for visualization.
-- Since this script uses OpenGL (`PyOpenGL` and `glfw`) to draw an 3D arrow, you need to have an window system for this to work.
-	- We use the script that were used in [Gaze360](https://github.com/erkil1452/gaze360) for drawing 3D arrows.
+data/
+  Not committed.
+  Expected local structure when training:
+  - frames/: raw video frames from DP Dataset
+  - labels/: CSV + metadata from DP Dataset
+  - keypoints/: preprocessed pose/keypoint data
 
-### DP Dataset
+────────────────────────
+MAIN BRANCH PURPOSE
+────────────────────────
 
-![Examples of the DP Dataset](./img/DPDataset_examples.jpg)
+The main branch reproduces the authors’ demo pipeline using the original pretrained weights.
+No model retraining is performed here.
 
-You can download the DP Dataset from Google Drive. [link](https://drive.google.com/drive/folders/1W_49HId_2FLFH0X9Ry8QiTTyaVt2Y0ks)
+This branch answers:
+- Can the released DeePoint model be executed on a CPU-only Windows machine?
+- Can the demo video pipeline be reproduced as described in the paper?
 
-#### License
-The DP Dataset is distributed under the [Creative Commons Attribution-Noncommercial 4.0 International License (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/).
+────────────────────────
+HOW THE MODEL WORKS (OVERVIEW)
+────────────────────────
 
-#### Training with the DP Dataset
-After downloading the dataset, follow the instructions in [data/README.md](data/README.md).
-The structure of `data` directory then should look like below:
-```
-deepoint
-├── data
-│   ├── README.md
-│   ├── mount_frames.sh
-│   ├── frames
-│   │   ├── 2023-01-17-livingroom
-│   │   └── ...
-│   ├── labels
-│   │   ├── 2023-01-17-livingroom
-│   │   └── ...
-│   └── keypoints
-│       ├── collected_json.pickle
-│       └── triangulation.pickle
-└── ...
-```
-After downloading the dataset, run
-```
-python src/main.py task=train
-```
-to train the model. Refer to `conf/model` for configurations of the model.
+For each short temporal window of frames:
+1) A human pose estimator (OpenPifPaf) extracts 2D keypoints.
+2) Keypoints are normalized relative to body size and chest position.
+3) Joint positions are converted into token sequences.
+4) A transformer-based network predicts:
+   - pointing vs non-pointing probability
+   - a 3D pointing direction vector
+5) In demo mode, the direction is visualized as an arrow overlaid on the video.
 
-#### Evaluation with the DP Dataset
-After training, you can evaluate the model by running:
+The demo script also prints the pointing probability for each frame window.
 
-```
-python src/main.py task=test ckpt=./path/to/the/model.ckpt
-```
+────────────────────────
+WHAT WAS CHANGED FOR REPRODUCTION
+────────────────────────
+
+Only compatibility and execution changes were made:
+
+1) Dependency installation and version alignment
+   Some required packages were not listed explicitly and were installed as needed
+   (einops, matplotlib, openpifpaf).
+
+2) CPU-only execution
+   The pretrained checkpoint was saved from a CUDA environment.
+   On a CPU-only system, checkpoints must be loaded with CPU mapping to avoid runtime errors.
+
+3) No architectural or algorithmic changes
+   The model structure, weights, and inference logic remain unchanged.
+
+────────────────────────
+HOW TO RUN THE DEMO (MAIN BRANCH)
+────────────────────────
+
+Activate environment:
+conda activate deepoint
+cd path/to/deepoint
+
+Run demo:
+python src/demo.py movie=./demo/example.mp4 lr=l ckpt=path/to/pretrained.ckpt
+
+Outputs:
+- processed demo videos saved in demo/
+- per-frame pointing probabilities printed to terminal
+
+────────────────────────
+EXPERIMENTAL BRANCHES
+────────────────────────
+
+For training experiments, see:
+- baseline-small branch README
+- augmented-small branch README
+
+These branches build on the same codebase but modify configuration and training behavior.
