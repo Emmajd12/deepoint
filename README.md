@@ -102,8 +102,11 @@ Activate environment:
 conda activate deepoint
 cd path/to/deepoint
 
-Run demo:
-python src/demo.py movie=./demo/example.mp4 lr=l ckpt=path/to/pretrained.ckpt
+You can download the pretrained model from [here](https://drive.google.com/file/d/1I887Y_G27sPf6QaFfMDTJoHVcTR-pTR_/view?usp=drive_link). Download it and save the file as models/weight.ckpt.
+
+You can apply the model on your video and visualize the result by running the script below.
+
+python src/demo.py movie=./demo/example.mp4 lr=l ckpt=./models/weight.ckpt
 
 Outputs:
 - processed demo videos saved in demo/
